@@ -1,0 +1,29 @@
+{
+  "name": "crawlcinemas",
+  "version": "1.0.0",
+  "description": "Crawl movies data from Cinemas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-burg": "node at_at-burgkino.js",
+    "dev-frei": "node at_at-kino-freistadt.js",
+    "dev-egg": "node de_de-kino-eggenfelden.js",
+
+
+    "debug-egg": "node de_de-kino-eggenfelden.js -v",
+    "debug-burg": "node at_at-burgkino.js -v",
+
+    "time": "node at_at-burgkino.js -v time:parsing",
+    "time-burg": "node at_at-burgkino.js -v time:parsing",
+
+
+    "box": "node at_at-burgkino.js -v :selection:box",
+    "cinemas": "node at_at-burgkino.js -v cinemas",
+    "cinemasresult": "node at_at-burgkino.js -v cinemas:result"
+  },
+  "author": "Besar Dani",
+  "license": "MIT",
+  "dependencies": {
+    "crawl-e/v0.4.9": "http://www.bitbucket.org/cinepass/crawl-e.git#v0.4.9"
+   }
+}
